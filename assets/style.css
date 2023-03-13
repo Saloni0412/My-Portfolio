@@ -1,0 +1,75 @@
+body {
+    margin: 0%;
+    background-color: beige;
+}
+
+:root {
+    --pink: rgb(243, 239, 247);
+}
+
+.hero {
+    height: 150px;
+    width: 100%;
+    background-image: url(./images/image3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+ul li {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: underline;  
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(51, 44, 63);
+}
+
+header h1 {
+    padding-left: 60px;
+    background-color: var(--pink);
+    font-size: 40px;
+}
+
+ul {
+    padding-right: 63px;
+    font-size: 25px;
+    color: var(--pink);
+    
+}
+section h2 {
+    margin-right: 35px;
+    font-size: 25px;
+    background-color: var(--pink);
+}
+.container {
+    position: relative;
+}
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 20px;
+}
+aside div h2 {
+    float: left;
+    margin-left: 70px;
+    font-size: 40px;
+    position: relative;
+    padding-right: 0px;
+   
+}
+aside div p {
+    position: absolute;
+    left: 250px;
+    top: 268px;
+    padding-left: 20px;
+    border-left: 5px solid black;
+}
