@@ -1,10 +1,10 @@
 body {
     margin: 0%;
-    background-color: beige;
+    background-color: rgb(240, 240, 222);
 }
 
 :root {
-    --pink: rgb(243, 239, 247);
+    --pink: rgb(229, 223, 235);
 }
 
 .hero {
@@ -20,11 +20,17 @@ body {
     position: relative;
 }
 
-ul li {
-    display: inline-block;
-    padding: 5px;
-    text-decoration: underline;  
+header ul li {
+    display: inline-block;   
 }
+
+a {
+    color: var(--pink);
+    background-color: transparent;
+    text-decoration: underline;
+    padding: 5px;
+  }
+  
 
 header {
 display: flex;
@@ -35,6 +41,7 @@ background-color: rgb(51, 44, 63);
 
 header h1 {
     padding-left: 60px;
+    padding-right: 10px;
     background-color: var(--pink);
     font-size: 40px;
 }
@@ -42,23 +49,20 @@ header h1 {
 ul {
     padding-right: 63px;
     font-size: 25px;
-    color: var(--pink);
-    
 }
+
 section h2 {
     margin-right: 35px;
     font-size: 25px;
     background-color: var(--pink);
 }
-.container {
-    position: relative;
-}
+
 .bottomright {
     position: absolute;
     bottom: 8px;
     right: 20px;
 }
-aside div h2 {
+.about-me {
     float: left;
     margin-left: 70px;
     font-size: 40px;
@@ -66,10 +70,60 @@ aside div h2 {
     padding-right: 0px;
    
 }
-aside div p {
+section div p {
     position: absolute;
-    left: 250px;
+    font-size: 20px;
+    left: 278px;
     top: 268px;
     padding-left: 20px;
+    border-left: 4px solid black;
+}
+.Work {
+    margin-left: 140px;
+    font-size: 40px;
+    position: absolute;
+    top: 400px;
+    padding-right: 0px;
+}
+.project1 {
+    position: relative;
+    left: 10px;
+    top: 0px;
+    padding: 10px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 180px;
+    width: 900px;
+    height: 760px;
+    padding-left: 0px;
+    border-left: 5px solid black;
+}
+.contact-me {
+    margin-left: 100px;
+    font-size: 40px;
+    position: absolute;
+    top: 1200px;
+    left: 0px;
+    text-align: right;
+
+    
+}
+
+footer {
+    position: relative;
+    top: 210px;
+    left: 275px;
+}
+footer nav ul li {
+    display: inline;
+    color: black;
+    padding-right: 63px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+footer nav ul {
     border-left: 5px solid black;
 }
