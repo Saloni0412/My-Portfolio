@@ -1,12 +1,12 @@
 *{
     font-family: "Times New Roman", Times, serif;
-    max-width: 100%;
+    max-width: 100;
 
 }
 
 body {
     margin: 0%;
-    background-color: rgb(240, 240, 222);
+    background-color: rgb(239, 232, 243);
 }
 
 :root {
@@ -83,6 +83,7 @@ section div p {
     left: 278px;
     top: 268px;
     padding-left: 20px;
+    color: rgb(15, 14, 14);
     border-left: 4px solid black;
 }
 .Work {
@@ -172,6 +173,7 @@ main {
     padding: 10px;
     padding-bottom: 20px;
     background-color: rgb(206, 176, 206);
+    text-align: left;
 }
 
 .image5 {
