@@ -113,6 +113,12 @@ section div p {
     border-left: 5px solid black;
     
 }
+
+span{
+    color: rgb(197, 25, 25);
+    font-weight: 600;
+}
+
 /* Media query for about me */
 @media only screen and (max-width: 786px) {
     .section-title {
