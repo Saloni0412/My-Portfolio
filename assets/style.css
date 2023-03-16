@@ -12,7 +12,7 @@
 
 body {
     margin: 0%;
-    background-color: rgb(239, 232, 243);
+    background-color: rgb(253, 224, 246);
 }
 
 /* CSS properties for header elements*/
@@ -79,7 +79,7 @@ ul li a {
 .hero {
     height: 150px;
     width: 100%;
-    background-image: url(./images/sub.png);
+    background-image: url(./images/sub5.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -111,6 +111,7 @@ section div p {
     padding-left: 20px;
     color: rgb(15, 14, 14);
     border-left: 5px solid black;
+    
 }
 /* Media query for about me */
 @media only screen and (max-width: 786px) {
@@ -119,6 +120,7 @@ section div p {
         font-size: 40px;
         margin-left: 10px;
         display: flex;
+        border-bottom: 5px solid black;
     }
     .about-container {
         display: flex;
@@ -126,14 +128,21 @@ section div p {
         text-align: center;
         align-items: center;
         justify-content: space-evenly;  
+
     }
     section div p {
         font-size: 20px;
         padding-left: 20px;
         color: rgb(15, 14, 14);
+        border-left: 0;
+       
     }
 }
 /* CSS properties for main tag*/
+#work{
+    margin-right: 9px;
+}
+
 main {
     display: flex;
     }
@@ -148,15 +157,40 @@ main {
         flex-wrap: wrap;
         border-left: 5px solid black;
         position: relative;
+        
     }
 
+@media only screen and (max-width: 768px) {
+        .album {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            flex-direction: column;
+            border-left: 0
+        }
+    
+    }
+        
+    
 /* CSS properties with hover effect and positioning for images*/
 .project1 {
     margin: 10px;
     border: 3px solid rgb(51, 44, 63);
     opacity: 0.3;
     box-shadow: 5px 5px 10px purple;
+    flex-shrink: 1;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    .shrink {
+        width: 406px;
+        height: 205px;
+    }
+}
+
 .project1:hover{
     position: relative;
     opacity: 1;
@@ -164,7 +198,7 @@ main {
     transition: 1s ease;
 }
 
-/* CSS broperties with positioning for images*/
+/* CSS broperties with positioning for subtitles in the images*/
 #image1 {
     position: absolute;
     text-align: center;
@@ -208,11 +242,57 @@ main {
     box-shadow: 5px 5px 10px purple;
 }
 
+/* Media query for the subtitles of images*/
+@media only screen and (max-width: 768px) {
+    #image1 {
+        position: absolute;
+        text-align: center;
+        bottom: 920px;
+        left: 160px;
+    }
+    
+    #image2 {
+        position: absolute;
+        text-align: center;
+        bottom: 689px;
+        left: 160px;
+    }
+    
+    #image3 {
+        position: absolute;
+        text-align: center;
+        bottom: 459px;
+        left: 160px;
+    }
+    
+    #image4 {
+        position: absolute;
+        text-align: center;
+        bottom: 229px;
+        left: 160px;
+    }
+    
+    #image5 {
+        position: absolute;
+        text-align: center;
+        bottom: 1px;
+        left: 160px;
+    }
+}
 /* CSS property for footer*/
 
 footer {
     display: flex;
     align-items: center;
+}
+@media only screen and (max-width: 768px) {
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    border-top: 5px solid purple;
+}
 }
 
 .contact-me {
@@ -221,6 +301,12 @@ footer {
     margin-left: 80px;
     font-size: 40px;
     margin-right: -9px;
+    
+}
+
+footer nav ul li a {
+    color: black;
+    text-decoration: none;
 }
     
 footer nav ul {
@@ -229,14 +315,28 @@ footer nav ul {
 
 footer nav ul li {
     display: inline;
-    color: black;
+    color: rgb(37, 29, 37);
     font-size: 25px;
     border-bottom: 2px 
     solid black;
-    font-weight: 500;
+    font-weight: 700;
     margin-right: 70px;
 }
 
-#work{
-    margin-right: 9px;
+@media only screen and (max-width: 768px) {
+    footer nav ul {
+        border-left: 0;
+    }
 }
+
+@media only screen and (max-width: 768px) {
+footer nav ul li {
+    display: inline-block; 
+    width: 100%;
+    height: 40px; 
+    border-bottom: 0;
+    margin-right: 0px;
+    text-align: center;
+}
+}
+
