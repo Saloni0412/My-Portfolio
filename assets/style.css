@@ -1,6 +1,12 @@
 *{
     font-family: "Times New Roman", Times, serif;
     max-width: 100;
+    color: rgb(29, 22, 27);
+
+}
+
+:root {
+    --pink: rgb(229, 223, 235);
 
 }
 
@@ -9,43 +15,14 @@ body {
     background-color: rgb(239, 232, 243);
 }
 
-:root {
-    --pink: rgb(229, 223, 235);
-
-}
-
-.hero {
-    height: 150px;
-    width: 100%;
-    background-image: url(./images/image3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-}
-
-header ul li {
-    display: inline-block; 
-
-}
-
-ul li a {
-    color: var(--pink);
-    background-color: transparent;
-    padding: 5px;
-  }
-  
-
+/* CSS properties for header elements*/
 header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: rgb(51, 44, 63);
-}
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 44, 63);
+    }
+    
 header h1 {
     padding-left: 60px;
     padding-right: 10px;
@@ -58,189 +35,164 @@ ul {
     font-size: 25px;
 }
 
-section h2 {
-    margin-right: 35px;
-    font-size: 25px;
-    background-color: var(--pink);
+header ul li {
+    display: inline-block; 
+
 }
 
+ul li a {
+    color: var(--pink);
+    background-color: transparent;
+    padding: 5px;
+  }
+
+  /* Hover effect for the lnks in header*/
+  a:hover {
+    color: orange
+}
+  
+/* CSS properties for section 1*/
+.hero {
+    height: 150px;
+    width: 100%;
+    background-image: url(./images/sub.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
 .bottomright {
     position: absolute;
     bottom: 8px;
     right: 20px;
 }
-.about-me {
-    float: left;
-    margin-left: 70px;
-    font-size: 40px;
-    position: relative;
-    padding-right: 0px;
-   
+
+/* CSS properties for About me heading and*/
+.about-container {
+    display: flex;
 }
+
+.section-title {
+    padding-right: 10px;
+    font-size: 40px;
+    margin-left: 150px;
+    display: flex;
+}
+
 section div p {
-    position: absolute;
     font-size: 20px;
-    left: 278px;
-    top: 268px;
     padding-left: 20px;
     color: rgb(15, 14, 14);
-    border-left: 4px solid black;
-}
-.Work {
-    margin-left: 140px;
-    font-size: 40px;
-    position: absolute;
-    top: 400px;
-    padding-right: 0px;
-}
-.project1 {
-    left: 10px;
-    top: 0px;
-    margin: 10px;
-    border: 3px solid rgb(51, 44, 63);
-}
-main {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    top: 180px;
-    max-width: 900px;
-    height: 760px;
     border-left: 5px solid black;
 }
-.contact-me {
-    margin-left: 100px;
-    font-size: 40px;
-    position: relative;
-    top: 70px;
-    right: 335px;
-    text-align: left;
 
+/* CSS properties for main tag*/
+main {
+    display: flex;
+    }
+
+.parent-album {
+        width: 1000px;
+        
+    }
+
+.album {
+        display: flex;
+        flex-wrap: wrap;
+        border-left: 5px solid black;
+        position: relative;
+    }
+
+/* CSS properties with hover effect and positioning for images*/
+.project1 {
+    margin: 10px;
+    border: 3px solid rgb(51, 44, 63);
+    opacity: 0.3;
+    box-shadow: 5px 5px 10px purple;
 }
-.image1 {
+.project1:hover{
     position: relative;
-    opacity:0.3;
-     
+    opacity: 1;
+    box-shadow: 5px 5px 10px purple;
+    transition: 1s ease;
 }
+
+/* CSS broperties with positioning for images*/
 #image1 {
     position: absolute;
     text-align: center;
-    bottom: 460px;
+    bottom: 490px;
     left: 14px;
-    font-size: 20px;
-    padding: 10px;
-    padding-bottom: 20px;
-    background-color: rgb(206, 176, 206);
 }
-.image2 {
-    position: relative;
-    opacity:0.3;
-}
+
 #image2 {
     position: absolute;
     text-align: center;
-    bottom: 230px;
+    bottom: 258px;
     left: 14px;
-    font-size: 20px;
-    padding: 10px;
-    padding-bottom: 20px;
-    background-color: rgb(206, 176, 206);
 }
-.image3 {
-    position: relative;
-    opacity:0.3;
-}
+
 #image3 {
     position: absolute;
     text-align: center;
-    bottom: 230px;
+    bottom: 258px;
     left: 440px;
-    font-size: 20px;
-    padding: 10px;
-    padding-bottom: 20px;
-    background-color: rgb(206, 176, 206);
 }
-.image4 {
-    position: relative;
-    opacity:0.3;
-}
+
 #image4 {
     position: absolute;
     text-align: center;
-    bottom: 1px;
+    bottom: 25px;
     left: 14px;
-    font-size: 20px;
-    padding: 10px;
-    padding-bottom: 20px;
-    background-color: rgb(206, 176, 206);
-    text-align: left;
 }
 
-.image5 {
-    position: relative;
-    opacity:0.3;
-}
 #image5 {
     position: absolute;
     text-align: center;
-    bottom: 1px;
+    bottom: 25px;
     left: 440px;
+}
+
+.design {
     font-size: 20px;
     padding: 10px;
     padding-bottom: 20px;
     background-color: rgb(206, 176, 206);
-    text-align: left;
+    box-shadow: 5px 5px 10px purple;
 }
 
-a:hover {
-    color: orange
-
-}
-
-.image1:hover{
-    position: relative;
-    opacity: 1;
-    box-shadow: 5px 5px 10px purple;
-    transition: 1s ease;
-}
-.image2:hover{
-    position: relative;
-    opacity: 1;
-    box-shadow: 5px 5px 10px purple;
-    transition: 1s ease;
-}
-.image3:hover{
-    position: relative;
-    opacity: 1;
-    box-shadow: 5px 5px 10px purple;
-    transition: 1s ease;
-}
-.image4:hover{
-    position: relative;
-    opacity: 1;
-    box-shadow: 5px 5px 10px purple;
-    transition: 1s ease;
-}
-.image5:hover{
-    position: relative;
-    opacity: 1;
-    box-shadow: 5px 5px 10px purple;
-    transition: 1s ease;
-}
+/* CSS property for footer*/
 
 footer {
-    position: relative;
-    top: 210px;
-    left: 275px;
+    display: flex;
+    align-items: center;
 }
+
+.contact-me {
+    position: relative;
+    right: 26px;
+    margin-left: 80px;
+    font-size: 40px;
+    margin-right: -9px;
+}
+    
+footer nav ul {
+    border-left: 5px solid black;
+}
+
 footer nav ul li {
     display: inline;
     color: black;
-    margin-right: 63px;
-    padding-right: px;
     font-size: 25px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px 
+    solid black;
+    font-weight: 500;
+    margin-right: 70px;
 }
-footer nav ul {
-    border-left: 5px solid black;
+
+#work{
+    margin-right: 9px;
 }
